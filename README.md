@@ -1,1 +1,0 @@
-# BIS-Worker-Frontend
