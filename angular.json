@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "BIS-Worker-Frontend:build:production"
+              "buildTarget": "BIS-Worker-Frontend:build:production"
             },
             "development": {
-              "browserTarget": "BIS-Worker-Frontend:build:development"
+              "buildTarget": "BIS-Worker-Frontend:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "BIS-Worker-Frontend:build"
+            "buildTarget": "BIS-Worker-Frontend:build"
           }
         },
         "test": {
