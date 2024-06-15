@@ -1,5 +1,6 @@
 :host {
   height: 100vh;
+  background-color: #111e32;
 }
 
 h2 {
@@ -13,30 +14,39 @@ p {
   font-size: 12px;
 }
 
-
 .work-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
   overflow-y: auto;
   gap: 10px;
   padding: 40px 20px;
 
-  .list-progress header {
-    background-color: #2ba266;
+  .list-progress {
+    border: 1px solid #2ba266;
+    header {
+      background-color: #2ba266;
+  }
   }
 
-  .list-over header {
-    background-color: #e04743;
+  .list-over {
+    border: 1px solid #e04743;
+
+    header {
+      background-color: #e04743;
+    }
   }
 
-  .list-out header {
-    background-color: #e7683e;
+  .list-out {
+    border: 1px solid #e7683e;
+
+    header {
+      background-color: #e7683e;
+    }
   }
 
   .list-progress, .list-over, .list-out {
-    width: 350px;
+    width: 220px;
     min-height: 150px;
     max-height: fit-content;
     border-radius: 10px;
@@ -68,6 +78,8 @@ p {
 
       .img-wrapper {
         display: flex;
+        justify-content: center;
+        align-items: center;
         gap: 8px;
 
         img {

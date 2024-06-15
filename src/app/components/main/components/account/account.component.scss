@@ -1,0 +1,95 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+
+  .logo {
+    width: 200px;
+    height: 65px;
+
+    img {
+      width: 200px;
+      height: 65px;
+    }
+  }
+
+  .user-photo {
+    width: 90px;
+    height: 65px;
+    border-radius: 100%;
+    overflow: hidden;
+
+    img {
+      width: 90px;
+      height: 65px;
+    }
+  }
+}
+main {
+  padding: 0 20px;
+  h1 {
+    font-family: "Halvar Mittel Bd", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+
+  .info .info-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+
+    .list {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 4px;
+      h2 {
+        flex-basis: 12%;
+      }
+    }
+  }
+}
+
+.add-task {
+  .add-task-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+
+    .form__label {
+      font-family: 'Halvar Mittel XTh', sans-serif;
+      font-size: 0.8rem;
+      margin-left: 1rem;
+      margin-top: 0.7rem;
+      display: block;
+      transition: all 0.3s;
+      transform: translateY(0rem);
+    }
+
+    .form__input {
+      font-family: 'Halvar Mittel XTh', sans-serif;
+      color: #333;
+      font-size: 0.8rem;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      border-radius: 0.2rem;
+      background-color: rgb(255, 255, 255);
+      border: 1px solid rgb(0, 0, 0, 0.1);
+      width: 185px;
+      display: block;
+      transition: all 0.3s;
+    }
+
+    .form__input:placeholder-shown + .form__label {
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transform: translateY(-4rem);
+      transform: translateY(-4rem);
+    }
+  }
+}

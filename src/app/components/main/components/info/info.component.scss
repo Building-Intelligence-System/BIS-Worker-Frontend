@@ -1,55 +1,60 @@
 header {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
   align-items: center;
   padding: 40px 20px;
+  background-color: #111e32;
 
   .logo {
     width: 200px;
     height: 65px;
+    border-radius: 10px;
+    overflow: hidden;
 
     img {
       width: 200px;
       height: 65px;
     }
   }
+.user-data {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
 
   .user-photo {
-    width: 90px;
+    width: 75px;
     height: 65px;
     border-radius: 100%;
     overflow: hidden;
 
     img {
-      width: 90px;
+      width: 65px;
       height: 65px;
     }
   }
-}
-main {
-  padding: 0 20px;
-  h1 {
-    font-family: "Halvar Mittel Bd", sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    padding-bottom: 20px;
-  }
 
-  .info .info-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 8px;
-
-    .list {
+  .user-info {
+    width: 100%;
+    .user-info-list {
       display: flex;
-      justify-content: flex-start;
-      align-items: center;
+      flex-direction: column;
       gap: 4px;
-      h2 {
-        flex-basis: 12%;
+
+      .info-list {
+        display: flex;
+        color: white;
+        gap: 10px;
+
+        h2 {
+          flex-basis: 25%;
+        }
       }
     }
   }
+}
+
 }
