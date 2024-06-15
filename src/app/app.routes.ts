@@ -42,12 +42,8 @@ export const routes: Routes = [
         component: MapComponent,
       },
       {
-        path: 'account',
-        component: InfoComponent,
-      },
-      {
         path: '',
-        redirectTo: 'info',
+        redirectTo: 'task',
         pathMatch: 'full'
       }
     ]

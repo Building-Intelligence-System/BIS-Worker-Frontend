@@ -21,14 +21,12 @@ export enum TabName {
   TASK = "TASK",
   NOTIFICATION = "NOTIFICATION",
   CHAT = "CHAT",
-  MAP = "MAP",
-  ACCOUNT = "ACCOUNT"
+  MAP = "MAP"
 }
 
 export const tabNameList: Record<TabName, [string, string]> = {
   [TabName.TASK]: ['Задачи', 'assets/icons/task.svg#task'],
   [TabName.NOTIFICATION]: ['Напоминания', 'assets/icons/notification.svg#notification'],
   [TabName.CHAT]: ['Чат', 'assets/icons/message.svg#message'],
-  [TabName.MAP]: ['Карта', 'assets/icons/map.svg#map'],
-  [TabName.ACCOUNT]: ['Аккаунт', 'assets/icons/account.svg#account']
+  [TabName.MAP]: ['Карта', 'assets/icons/map.svg#map']
 }
