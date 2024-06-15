@@ -21,4 +21,4 @@ FROM nginx:alpine
 
 COPY ./misc/nginx/default.conf /etc/nginx/conf.d/default.conf
 COPY ./misc/ssl /etc/nginx/certificates
-COPY --from=builder /build/dist /usr/share/nginx/html
+COPY --from=builder /build/dist/browser /usr/share/nginx/html
