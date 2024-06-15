@@ -54,7 +54,7 @@ export class MapComponent implements AfterViewInit {
       .bindPopup('Ограждение территории')
       .addTo(this.map)
 
-    const circle = L.circle([45.035915, 39.016176], {
+    const circle = L.circle([45.035875, 39.016176], {
       color: 'red',
       fillColor: '#f03',
       fillOpacity: 0.5,
@@ -62,13 +62,13 @@ export class MapComponent implements AfterViewInit {
     }).addTo(this.map);
 
     const polygon = L.polygon([
-      [45.036906, 39.018066],
+      [45.036306, 39.018466],
       [45.035906, 39.018576],
-      [45.035806, 39.018166],
+      [45.035606, 39.018166],
       [45.036006, 39.017066]
     ]).addTo(this.map);
 
-    const circle1 = L.circle([45.035608, 39.017066], {
+    const circle1 = L.circle([45.035568, 39.017166], {
       color: '#2ba266',
       fillColor: '#2ba266',
       fillOpacity: 0.5,
