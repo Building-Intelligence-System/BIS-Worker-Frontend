@@ -20,4 +20,5 @@ RUN npm run build:prod
 FROM nginx:alpine
 
 COPY ./misc/nginx/default.conf /etc/nginx/conf.d/default.conf
+COPY ./misc/ssl /etc/nginx/certificates
 COPY --from=builder /build/dist /usr/share/nginx/html
