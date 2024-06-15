@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Halvar Mittel XTh';
+  src: url('src/assets/fonts/HalvarMittel-XThSlanted.eot');
+  src: local('Halvar Mittelschrift ExtraThin Slanted'), local('HalvarMittel-XThSlanted'),
+  url('src/assets/fonts/HalvarMittel-XThSlanted.eot?#iefix') format('embedded-opentype'),
+  url('src/assets/fonts/HalvarMittel-XThSlanted.woff2') format('woff2'),
+  url('src/assets/fonts/HalvarMittel-XThSlanted.woff') format('woff'),
+  url('src/assets/fonts/HalvarMittel-XThSlanted.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Halvar Mittel Rg';
+  src: url('src/assets/fonts/HalvarMittel-Rg.eot');
+  src: local('Halvar Mittelschrift Regular'), local('HalvarMittel-Rg'),
+  url('src/assets/fonts/HalvarMittel-Rg.eot?#iefix') format('embedded-opentype'),
+  url('src/assets/fonts/HalvarMittel-Rg.woff2') format('woff2'),
+  url('src/assets/fonts/HalvarMittel-Rg.woff') format('woff'),
+  url('src/assets/fonts/HalvarMittel-Rg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Halvar Mittel Bd';
+  src: url('src/assets/fonts/HalvarMittel-Bd.eot');
+  src: local('Halvar Mittelschrift Bold'), local('HalvarMittel-Bd'),
+  url('src/assets/fonts/HalvarMittel-Bd.eot?#iefix') format('embedded-opentype'),
+  url('src/assets/fonts/HalvarMittel-Bd.woff2') format('woff2'),
+  url('src/assets/fonts/HalvarMittel-Bd.woff') format('woff'),
+  url('src/assets/fonts/HalvarMittel-Bd.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

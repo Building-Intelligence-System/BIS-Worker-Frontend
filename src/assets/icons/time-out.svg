@@ -1,0 +1,6 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="time-out">
+  <rect width="16" height="16" rx="8" fill="#C48F00"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 8.41421V7L5.41421 7L7 8.58579L10.5858 5H12V6.41421L7.70711 10.7071L7 11.4142L6.29289 10.7071L4 8.41421Z" fill="white"/>
+</g>
+</svg>

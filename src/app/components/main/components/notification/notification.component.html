@@ -1,0 +1,8 @@
+<app-info></app-info>
+<ul class="notification-list">
+  @for(notification of notifications; track $index) {
+    <li class="notification">
+      <h2>{{ notification }}</h2>
+    </li>
+  }
+</ul>

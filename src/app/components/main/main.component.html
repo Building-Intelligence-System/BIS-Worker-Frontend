@@ -1,0 +1,20 @@
+<div class="container">
+  <router-outlet></router-outlet>
+  <footer>
+    <nav>
+      <ul class="tab-list">
+        @for(tab of Object.entries(tabNameList); track $index) {
+          <li class="tab"
+              [routerLink]="tab[0].toLowerCase()"
+              [routerLinkActive]="'active'">
+            <h5>{{ tab[1][0] }}</h5>
+            <svg>
+              <use [attr.href]="tab[1][1]"></use>
+            </svg>
+          </li>
+        }
+      </ul>
+    </nav>
+  </footer>
+</div>
+

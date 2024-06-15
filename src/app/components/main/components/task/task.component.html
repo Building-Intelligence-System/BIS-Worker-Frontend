@@ -1,0 +1,79 @@
+<app-info></app-info>
+<ul class="work-list">
+  <li class="list-progress" (click)="description = !description">
+    <header>
+      <h1>Ограждение территории</h1>
+    </header>
+    <main>
+      <p>Статус</p>
+      <div class="img-wrapper">
+        <img src="assets/icons/time-progress.svg" alt="sa">
+        <h2>Работа выполняется</h2>
+      </div>
+    </main>
+    <footer>
+      <div class="start-time">
+        <p>Время начала:</p>
+        <h2>16:30 18.05.2024г.</h2>
+      </div>
+      <div class="end-time">
+        <p>Время окончания:</p>
+        <h2>17:30 21.07.2024г.</h2>
+      </div>
+    </footer>
+    @if (description) {
+      <div class="description">
+        <h2>Описание:</h2>
+        <ol>
+          <li><p>Земляные работы.</p></li>
+          <li><p>Фундаментные работы.</p></li>
+          <li><p>Монтажные работы.</p></li>
+        </ol>
+      </div>
+    }
+  </li>
+  <li class="list-over">
+    <header>
+      <h1>Заливка фундамента</h1>
+    </header>
+    <main>
+      <p>Статус</p>
+      <div class="img-wrapper">
+        <img src="assets/icons/time-over.svg" alt="sa">
+        <h2>Превышение сроков</h2>
+      </div>
+    </main>
+    <footer>
+      <div class="start-time">
+        <p>Время начала:</p>
+        <h2>16:30 18.05.2024г.</h2>
+      </div>
+      <div class="end-time">
+        <p>Время окончания:</p>
+        <h2>17:30 21.06.2024г.</h2>
+      </div>
+    </footer>
+  </li>
+  <li class="list-out">
+    <header>
+      <h1>Уборка территории</h1>
+    </header>
+    <main>
+      <p>Статус</p>
+      <div class="img-wrapper">
+        <img src="assets/icons/time-out.svg" alt="sa">
+        <h2>Подходит срок</h2>
+      </div>
+    </main>
+    <footer>
+      <div class="start-time">
+        <p>Время начала:</p>
+        <h2>16:30 21.06.2024г.</h2>
+      </div>
+      <div class="end-time">
+        <p>Время окончания:</p>
+        <h2>17:30 24.06.2024г.</h2>
+      </div>
+    </footer>
+  </li>
+</ul>

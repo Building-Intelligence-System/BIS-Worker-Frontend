@@ -1,0 +1,120 @@
+:host {
+  display: contents;
+}
+
+h2 {
+  font-family: "Halvar Mittel Rg", sans-serif;
+  color: white;
+  font-size: 14px;
+}
+
+p {
+  color: white;
+  font-size: 12px;
+}
+
+
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  gap: 10px;
+  padding: 40px 20px;
+
+  .list-progress header {
+    background-color: #2ba266;
+  }
+
+  .list-over header {
+    background-color: #e04743;
+  }
+
+  .list-out header {
+    background-color: #e7683e;
+  }
+
+  .list-progress, .list-over, .list-out {
+    width: 350px;
+    min-height: 150px;
+    max-height: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background-color: #111e32;
+
+    header {
+      width: 100%;
+      padding: 10px 20px;
+
+      h1 {
+        font-family: "Halvar Mittel Bd", sans-serif;
+        color: white;
+        font-size: 24px;
+      }
+    }
+
+    main {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 20px 20px 15px 20px;
+
+      p {
+        flex-basis: 40%;
+      }
+
+      .img-wrapper {
+        display: flex;
+        gap: 8px;
+
+        img {
+          border: 1px solid white;
+          border-radius: 50%;
+          height: 16px;
+          width: 16px;
+        }
+      }
+    }
+
+    footer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 0 20px;
+
+      .start-time, .end-time {
+        display: flex;
+        gap: 8px;
+        justify-content: flex-start;
+        align-items: center;
+
+        p {
+          flex-basis: 40%;
+        }
+      }
+    }
+  }
+
+  .description {
+    h2 {
+      padding-bottom: 5px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    padding: 20px 20px 0;
+    color: white;
+
+    ol {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 8px;
+      padding: 10px 15px;
+      list-style: initial;
+    }
+  }
+}
