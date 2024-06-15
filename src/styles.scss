@@ -1,12 +1,6 @@
 @import 'helpers/reset';
 @import 'helpers/fonts';
 
-body, html {
-  margin: 0 auto;
-  border: 1px solid;
-  border-radius: 20px;
-  overflow: hidden;
-}
 * {
   max-width: 500px;
   box-sizing: border-box;

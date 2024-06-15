@@ -30,7 +30,8 @@ export class QrScannerComponent implements OnInit, OnDestroy {
         qrbox: 250
       },
       qrCodeMessage => {
-        this.router.navigateByUrl("main");
+        alert(`Scanning QR Code: ${qrCodeMessage}`);
+        this.router.navigateByUrl("/main");
         console.log(qrCodeMessage);
       },
       errorMessage => {
@@ -45,6 +46,8 @@ export class QrScannerComponent implements OnInit, OnDestroy {
     if (!this.html5QrCode) return;
     this.html5QrCode.stop().then(ignore => {
       console.log("Остановилась");
+      alert(`Scanning QR Code: ${stop}`);
+      this.router.navigateByUrl("/main");
     })
   }
 

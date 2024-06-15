@@ -18,7 +18,8 @@ export class AuthService {
   private users: User[] = [
     {id: 0, name: 'Ilia',surname: 'pupkin',secondName: 'evgenij', email: 'ilia@gmail.com', password: '123456', role: 'user' },
     {id: 1, name: 'Ivan',surname: 'pupkin',secondName: 'evgenij', email: 'ivan@gmail.com', password: '123456', role: 'superadmin' },
-    {id: 2, name: 'Alex',surname: 'pupkin',secondName: 'evgenij', email: 'alex@gmail.com', password: '123456', role: 'admin' }
+    {id: 2, name: 'Alex',surname: 'pupkin',secondName: 'evgenij', email: 'alex@gmail.com', password: '123456', role: 'admin' },
+    {id: 3, name: 'Waliot',surname: 'Waliot',secondName: 'Waliot', email: 'Waliot@gmail.com', password: '123456', role: 'admin' }
   ];
 
   private currentUser: User | null = null;
