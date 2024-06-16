@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 import {AuthService} from "../../auth.service";
 import {Router, RouterLink, RouterOutlet} from "@angular/router";
@@ -14,7 +14,7 @@ import {Router, RouterLink, RouterOutlet} from "@angular/router";
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
-export class  LoginComponent {
+export class  LoginComponent implements OnInit {
   loginForm: FormGroup;
   error: string = '';
 
@@ -27,9 +27,15 @@ export class  LoginComponent {
     });
   }
 
+  ngOnInit(): void {
+    this.loginForm.controls['email'].patchValue('waliot@gmail.com');
+    this.loginForm.controls['password'].patchValue('123456');
+    }
+
   login() {
     if (this.loginForm.valid) {
       const {email, password} = this.loginForm.value;
+      console.log(password);
       if (this.authService.login(email, password)) {
         this.error = '';
         this.router.navigate(['/qr-scanner']);
