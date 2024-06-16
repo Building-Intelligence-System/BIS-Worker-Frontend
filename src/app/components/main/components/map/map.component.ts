@@ -19,7 +19,8 @@ export class MapComponent implements AfterViewInit {
     this.map = L.map('map', {
       center: [45.07099372740487, 38.9067694661253],
       zoom: 18,
-      zoomControl: false
+      zoomControl: false,
+      attributionControl: false
     });
 
     const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
