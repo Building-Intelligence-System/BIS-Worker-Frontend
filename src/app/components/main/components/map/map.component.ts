@@ -17,7 +17,7 @@ export class MapComponent implements AfterViewInit {
 
   private initMap(): void {
     this.map = L.map('map', {
-      center: [45.035804, 39.018066],
+      center: [45.07099372740487, 38.9067694661253],
       zoom: 18,
       zoomControl: false
     });
@@ -42,40 +42,95 @@ export class MapComponent implements AfterViewInit {
     })
 
     tiles.addTo(this.map);
-    L.marker([45.035804, 39.017066], {icon: myIcon})
+    L.marker([45.07099372740487, 38.9067694661253], {icon: myIcon})
       .addTo(this.map)
-    L.marker([45.035905, 39.016066], {icon: myIcon1})
+    L.marker([45.071783051535334, 38.907345329798716], {icon: myIcon1})
       .bindPopup('Уборка территории')
       .addTo(this.map)
-    L.marker([45.035906, 39.018066], {icon: myIcon2})
+    L.marker([45.0711530257453, 38.90655583163377], {icon: myIcon2})
       .bindPopup('Заливка фундамента')
       .addTo(this.map)
-    L.marker([45.035608, 39.017066], {icon: myIcon3})
+    L.marker([45.07119954671788, 38.90696576512127], {icon: myIcon3})
       .bindPopup('Ограждение территории')
       .addTo(this.map)
 
-    const circle = L.circle([45.035875, 39.016176], {
-      color: 'red',
-      fillColor: '#f03',
-      fillOpacity: 0.5,
-      radius: 10
-    }).addTo(this.map);
-
     const polygon = L.polygon([
-      [45.036306, 39.018466],
-      [45.035906, 39.018576],
-      [45.035606, 39.018166],
-      [45.036006, 39.017066]
+        [
+          45.0711530257453,
+          38.90655583163377
+
+        ],
+        [
+          45.07099372740487,
+          38.9067694661253
+
+        ],
+        [
+          45.071141865887114,
+          38.90688167479627
+
+        ],
+        [
+          45.07119954671788,
+          38.90696576512127
+
+        ],
+        [
+          45.071783051535334,
+          38.907345329798716
+
+        ],
+        [
+          45.071866595821746,
+          38.9070969720689
+        ],
+        [
+          45.07184406402541,
+          38.90701084373319
+        ],
+        [
+          45.0711530257453,
+          38.90655583163377
+        ]
     ]).addTo(this.map);
 
-    const circle1 = L.circle([45.035568, 39.017166], {
-      color: '#2ba266',
-      fillColor: '#2ba266',
-      fillOpacity: 0.5,
-      radius: 10
-    }).addTo(this.map);
+    const polygon2 = L.polygon([
+      [
+        45.07097257996085,
+        38.906801336438264
 
+      ],
+      [
+        45.07075780581053,
+        38.90709892132418
+
+      ],
+      [
+        45.07169620996055,
+        38.90765779755051
+
+      ],
+      [
+        45.071776758955195,
+        38.907384062255176
+
+      ],
+      [
+        45.071171998840725,
+        38.906990671064676
+
+      ],
+      [
+        45.0711074465315,
+        38.90689600255732
+
+      ],
+      [
+        45.07097257996085,
+        38.906801336438264
+
+      ]
+    ]).addTo(this.map);
+    polygon2.setStyle({fillColor: '#e2e5274d', color: 'yellow'});
   }
-
-
 }
